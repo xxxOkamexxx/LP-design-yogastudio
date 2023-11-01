@@ -1,0 +1,305 @@
+/* font-family: Arial, Helvetica, sans-serif; */
+/* font-family: 'Yeseva One', serif; */
+/* font-family: 'Noto Sans', sans-serif; */
+/* #B2BFAB */
+/* #B4D5D9 */
+/* #BC441B */
+/* #A66B37 */
+/* #C66C4D */
+/* #B58962 */
+/* #4A4A4A */
+/* #AAAAAA */
+/* #FFFFFF */
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Yeseva One', serif;
+  font-size: 5em;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2em;
+  margin: 16px 0 0 0;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-headline {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #A66B37;
+  font-weight: bold;
+  margin: 0;
+}
+
+.w-100 {
+  width: 100%
+}
+
+.w-70 {
+  width: 70%;
+  margin: auto;
+}
+
+.w-50 {
+  width: 50%;
+  margin: auto;
+}
+
+.mt-64 {
+  margin-top: 64px;
+}
+
+hr {
+  color: #AAAAAA;
+}
+
+.btn-primary {
+  background-color: #BC441B;
+  color: #FFFFFF;
+  font-family: Arial Narrow, Helvetica, sans-serif;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border: none;
+  height: 44px;
+  border-radius: 32px;
+  font-size: 24px;
+}
+
+.btn-primary:hover {
+  background-color: #C66C4D;
+}
+
+.btn-seconday {
+  background-color: #A66B37;
+  color: #FFFFFF;
+  font-family: Arial Narrow, Helvetica, sans-serif;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border: none;
+  height: 44px;
+  border-radius: 32px;
+  font-size: 24px;
+}
+
+.btn-seconday:hover {
+  background-color: #B58962;
+}
+
+.btn-seconday-sm {
+  background-color: #A66B37;
+  color: #FFFFFF;
+  font-family: Arial Narrow, Helvetica, sans-serif;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border: none;
+  height: 34px;
+  border-radius: 16px;
+  font-size: 16px;
+}
+
+.btn-seconday-sm:hover {
+  background-color: #B58962;
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 54px;
+  background-color: #B2BFAB;
+  display: flex;
+}
+
+.nav-container {
+  width: 90vw;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 40px;
+  display: inline-block;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu li {
+  font-family: 'Noto Sans', sans-serif;
+  display: inline-block;
+  list-style: none;
+  margin-left: 2em;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.nav-menu li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.hero {
+  margin-top: 54px;
+  width: 100%;
+  height: 815px;
+  background-image: url('/assets/images/horo-horizontal.jpg');
+  background-size: cover;
+}
+
+.hero-text-wrapper {
+  width: 420px;
+  height: 815px;
+  background-color: #ffffff50;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  width: 356px;
+  font-size: 2em;
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+}
+
+.welcome-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+}
+
+.section-image {
+  width: 100%;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-left: 64px;
+  margin-top: 0;
+}
+
+.welcome-wrapper .text-wrapper h3 {
+  font-family: 'Yeseva One', serif;
+  color: #BC441B;
+  font-size: 40px;
+  margin: 0;
+}
+
+.welcome-wrapper .text-wrapper p {
+  font-size: 1.5em;
+  color: #4A4A4A;
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+.classlist-wrapper p {
+  color: #A66B37;
+  margin: 0;
+  margin-top: 16px;
+}
+
+#classlist_el {
+  margin-top: 32px;
+  width: 100%;
+}
+
+#classlist_el h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #A66B37;
+  margin: 0;
+}
+
+#classlist_el .time {
+  color: #B58962;
+  margin: 0;
+}
+
+#classlist_el .description {
+  color: #4A4A4A;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.classlist-wrapper button {
+  display: block;
+  margin: auto;
+  margin-top: 32px;
+}
+
+.instructor-wrapper {
+  background-color: #B4D5D9;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.instructor-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.instructor-container h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #4A4A4A;
+  margin: 0;
+}
+
+.instructor-container .sm-bold {
+  font-weight: bolder;
+  color: #4A4A4A;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.instructor-container .citat {
+  font-family: 'Yeseva One', serif;
+  color: #FFFFFF;
+  margin: 24px 0;
+  font-size: larger;
+}
+
+.instructor-container .introduction {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4A4A4A;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+.instructor-container button {
+  display: block;
+  margin: auto;
+  margin-top: 32px;
+}
+
+.go-to-action-wrapper {
+  background-color: #B4D5D9;
+}
+
+/* media queries */
+/* Phone */
+@media screen and (min-width: 720px) {
+
+}
+/* Tablet */
+@media screen and (min-width: 1140px) {
+
+}
