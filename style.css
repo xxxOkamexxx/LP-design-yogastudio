@@ -13,6 +13,7 @@
 body {
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -293,6 +294,54 @@ hr {
 .go-to-action-wrapper {
   background-color: #B4D5D9;
 }
+
+.news-wrapper {
+ 
+}
+
+.overflow-x {
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  padding: 1em;
+  width: 300px !important;
+  height: 650px;
+  border-radius: 16px;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  width:268px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-logo {
+  width: 80px;
+  margin-right: 2em;
+}
+
+.card-text {
+  color: #BC441B;
+}
+
+.contributor {
+  font-weight: bold;
+}
+
+.card-image {
+  width: 268px !important;
+  height: 213px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 
 /* media queries */
 /* Phone */
