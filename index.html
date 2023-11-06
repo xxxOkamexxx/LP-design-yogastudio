@@ -21,13 +21,7 @@
   <header class="header-container w-100">
     <nav class="nav-container">
       <img class="nav-logo" src="/assets/logo/icon-m.png" alt="logo">
-      <ul class="nav-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Program</a></li>
-        <li><a href="#">Prices</a></li>
-        <li><a href="#">Bussiness Yoga</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul id="nav_menu" class="nav-menu">
       </ul>
     </nav>
   </header>
@@ -83,26 +77,53 @@
       </div>
     </section>
 
-    <section class="news-wrapper">
-      <h3 class="section-headline">News</h3>
-      <div id="news_el" class="overflow-x">
+    <section class="news-wrapper mt-32">
+      <h3 class="section-headline w-70">News</h3>
+      <div id="news_el" class="overflow-x pt-32 pb-32">
 
       </div>
     </section>
 
-    <section class="go-to-action-wrapper w-100">
-      <div class="w-70">
+    <section class="go-to-action-wrapper w-100 mt-32">
+      <div class="go-to-action-content w-70">
         <h2 class="go-to-action">Subscribe Our Newsletter</h2>
+        <form class="mt-32 mb-32">
+          <input type="text" aria-label="E-mail" placeholder="E-mail">
+        </form>
+        <button class="btn-primary">SUBSCRIBE</button>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer_wrapper w-100 mt-64">
+    <div class="footer-contain flex-row w-70">
+      <div class="footer-menu-container">
+        <h3 class="footer-headline">NAVIGATION</h3>
+        <ul id="footer_menu" class="footer-menu"></ul>
+      </div>
 
+      <div id="footer_contact" class="footer-contact-container">
+        <h3 class="footer-headline">CONTACT</h3>
+        <p>info@nyoga.test</p>
+        <p>0703 – 00 2464</p>
+        <p>Raffinadgatan </p>
+        <p>2222 35 Lund</p>
+      </div>
+
+      <div id="footer_sns" class="footer-sns-container">
+        <h3 class="footer-headline">SOCIAL MEDIA</h3>
+      </div>
+    </div>
+
+    <div class="footer-logo">
+      <img src="/assets/logo/icon-m.png" alt="">
+      <p class="copyright">© copyright</p>
+    </div>
   </footer>
   
   <script src="/assets/posts.js"></script>
   <script src="/assets/classlist.js"></script>
+  <script src="/assets/menuitems.js"></script>
   <script src="script.js"></script>
 
 </body>

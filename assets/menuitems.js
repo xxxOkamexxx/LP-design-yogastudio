@@ -1,0 +1,1 @@
+const menuItems = ['Home', 'Studio', 'Program', 'Prices', 'Bussiness Yoga', 'Contact']

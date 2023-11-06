@@ -29,13 +29,29 @@ h2 {
   margin: 16px 0 0 0;
 }
 
+
 p {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #BC441B;
+}
+
+a:hover {
+  color: #B2BFAB;
 }
 
 .section-headline {
   font-family: Arial, Helvetica, sans-serif;
   color: #A66B37;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer-headline {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
   font-weight: bold;
   margin: 0;
 }
@@ -56,6 +72,22 @@ p {
 
 .mt-64 {
   margin-top: 64px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.pt-32 {
+  padding-top: 32px;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
 }
 
 hr {
@@ -295,10 +327,6 @@ hr {
   background-color: #B4D5D9;
 }
 
-.news-wrapper {
- 
-}
-
 .overflow-x {
   overflow-x: scroll;
   display: flex;
@@ -336,12 +364,147 @@ hr {
 }
 
 .card-image {
+  margin-top: 0.5em;
   width: 268px !important;
   height: 213px;
   border-radius: 8px;
   object-fit: cover;
 }
 
+.card-articles {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
+  margin-top: 0.5em;
+  width: 100%;
+  /* this code clamps based on specified lines */
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 14;
+  display: -webkit-box;
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
+.card-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 268px !important;
+}
+
+.card-center-logo {
+  margin-top: 50%;
+  width: 80px;
+}
+
+.card-center-logo img {
+  margin: auto;
+}
+
+.card-center-text {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: large;
+  color: #4A4A4A;
+}
+
+.card-center-logo-lg {
+  width: 268px !important;
+}
+
+.card-center-logo-lg img {
+  width: 100%;
+}
+
+.go-to-action-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.go-to-action-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.go-to-action {
+  font-family: 'Yeseva One', serif;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+
+input{
+  width: 420px;
+  height: 64px;
+  border: none;
+  border-radius: 8px;
+  padding-left: 16px;
+}
+
+.footer_wrapper {
+  background-color: #B2BFAB;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-headline {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0;
+  text-align: left;
+}
+
+.footer-menu-item {
+  list-style: none;
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFFFFF;
+}
+
+.footer-menu {
+  padding-left: 0;
+}
+
+.footer-menu li {
+  font-family: 'Noto Sans', sans-serif;
+  list-style: none;
+  margin-left: 0em;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footer-menu li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  
+}
+
+.footer-contact-container p{
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.copyright {
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+}
 
 /* media queries */
 /* Phone */
