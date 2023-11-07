@@ -1,7 +1,10 @@
-const classlistEl = document.querySelector('#classlist_el')
-const navMenuEl = document.querySelector('#nav_menu')
-const newsEl = document.querySelector('#news_el')
-const footerMenuEl = document.querySelector('#footer_menu')
+const classlistEl = document.querySelector('#classlist_el');
+
+const navMenuEl = document.querySelector('#nav_menu');
+const hamburgerEl = document.querySelector('.hamburger');
+
+const newsEl = document.querySelector('#news_el');
+const footerMenuEl = document.querySelector('#footer_menu');
 
 // Nav menu
 const getNavMenu = () => {
@@ -12,6 +15,23 @@ const getNavMenu = () => {
 
 getNavMenu()
 
+
+// Hamburger Menu
+const navLinksEl = document.querySelectorAll('#nav_menu li');
+
+hamburgerEl.addEventListener("click", () => {
+    navMenuEl.classList.toggle('nav-active')
+
+    navLinksEl.forEach((link, index) => {
+        if(link.style.animation) {
+            link.style.animation = "";
+        } else {
+            link.style.animation = `navLinksFade 0.5s ease forwards ${index / 7 + 0.4}s`          
+        }
+    });
+
+    hamburgerEl.classList.toggle("toggle");
+});
 
 // Classes List
 const getListItem = () => {

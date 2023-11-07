@@ -1,15 +1,6 @@
-/* font-family: Arial, Helvetica, sans-serif; */
-/* font-family: 'Yeseva One', serif; */
-/* font-family: 'Noto Sans', sans-serif; */
-/* #B2BFAB */
-/* #B4D5D9 */
-/* #BC441B */
-/* #A66B37 */
-/* #C66C4D */
-/* #B58962 */
-/* #4A4A4A */
-/* #AAAAAA */
-/* #FFFFFF */
+/* ============== */
+/* General Style */
+/* ============== */
 body {
   width: 100%;
   margin: 0 auto;
@@ -28,7 +19,6 @@ h2 {
   font-size: 2em;
   margin: 16px 0 0 0;
 }
-
 
 p {
   font-family: Arial, Helvetica, sans-serif;
@@ -49,24 +39,17 @@ a:hover {
   margin: 0;
 }
 
-.footer-headline {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #FFFFFF;
-  font-weight: bold;
-  margin: 0;
-}
-
 .w-100 {
-  width: 100%
+  width: 100vw
 }
 
 .w-70 {
-  width: 70%;
+  width: 70vw;
   margin: auto;
 }
 
 .w-50 {
-  width: 50%;
+  width: 50vw;
   margin: auto;
 }
 
@@ -142,11 +125,16 @@ hr {
   background-color: #B58962;
 }
 
+/* ============== */
+/*     header     */
+/* ============== */
+
+/* Header navi */
 .header-container {
   position: fixed;
   top: 0;
   left: 0;
-  height: 54px;
+  height: 10vh;
   background-color: #B2BFAB;
   display: flex;
 }
@@ -168,6 +156,7 @@ hr {
 
 .nav-menu {
   display: flex;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-menu li {
@@ -184,8 +173,48 @@ hr {
   text-decoration: none;
 }
 
+.nav-menu li a:hover {
+  color: #A66B37;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-right: 5vw;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-active {
+  transform: translateX(0%) !important;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(405deg) translate(-5px, -6px);
+}
+
+/* ============== */
+/*      Main      */
+/* ============== */
+
+/* Hero */
 .hero {
-  margin-top: 54px;
+  margin-top: 10vh;
   width: 100%;
   height: 815px;
   background-image: url('/assets/images/horo-horizontal.jpg');
@@ -333,6 +362,7 @@ hr {
   flex-direction: row;
 }
 
+/* Card */
 .card {
   padding: 1em;
   width: 300px !important;
@@ -429,6 +459,7 @@ hr {
   align-items: center;
 }
 
+/* Go-to-action */
 .go-to-action-content {
   display: flex;
   flex-direction: column;
@@ -449,6 +480,10 @@ input{
   padding-left: 16px;
 }
 
+/* ============== */
+/*     Footer     */
+/* ============== */
+
 .footer_wrapper {
   background-color: #B2BFAB;
   padding-top: 64px;
@@ -465,7 +500,6 @@ input{
 }
 
 .footer-headline {
-  /* font-family: 'Noto Sans', sans-serif; */
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -531,12 +565,89 @@ input{
   background-color: #C66C4D;
 }
 
+
+
+/* ============= */
 /* media queries */
+/* ============= */
+
 /* Phone */
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 768px) { 
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .w-70 {
+    width: 100%;
+  }
+
+  .w-50 {
+    width: 80%;
+  }
+
+  .nav-menu {
+    margin: 0;
+    padding-left: 0;
+    position: fixed;
+    right: 0;
+    height: 90vh;
+    width: 70vw;
+    top: 10vh;
+    background-color: #B2BFAB;
+    flex-direction: column;
+    transform: translateX(100%);
+    overflow: hidden;
+  }
+
+  .nav-menu li {
+    opacity: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero-text-wrapper {
+    width: 100vw;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero {
+    margin-left: 0;
+    width: 100vw;
+    margin-top: 54px;
+    background-image: url('/assets/images/hero-vertical.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .welcome-wrapper {
+    flex-direction: column;
+  }
 
 }
 /* Tablet */
-@media screen and (min-width: 1140px) {
+@media screen and (max-width: 1140px) {
 
+}
+
+/* ============= */
+/*   animation   */
+/* ============= */
+@keyframes navLinksFade {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
