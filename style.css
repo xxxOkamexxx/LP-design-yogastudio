@@ -579,7 +579,7 @@ input{
   }
 
   .w-70 {
-    width: 100%;
+    width: 90%;
   }
 
   .w-50 {
@@ -631,6 +631,37 @@ input{
   .welcome-wrapper {
     flex-direction: column;
   }
+
+  .text-wrapper {
+    margin: 0 auto;
+  }
+
+  input{
+    width: 90vw;
+    height: 64px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 16px;
+  }
+
+  .instructor-container {
+    flex-direction: column;
+  }
+
+  .footer-contain {
+    flex-direction: column;
+    justify-content: center;
+  }  
+
+  .footer-contain div {
+    margin-bottom: 1.5em;
+  }
+
+  .sns-btns-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
 
 }
 /* Tablet */
