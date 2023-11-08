@@ -55,7 +55,7 @@ const getNews = () => {
                 
                 <div class='card-text'>
                     <p class='contributor'>N Yoga</p>
-                    <p><small class='post-data'>${post.date} ago</small></p>
+                    <p class='post-data'><small>${post.date} ago</small></p>
                 </div>
             </div>
 
